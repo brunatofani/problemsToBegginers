@@ -11,7 +11,7 @@ int main (void ) {
 
     for (int i = 0; i < totalElementos; i++ )
         for (int j = 0; j < totalElementos; j++ ) {
-           printf ("\nElemento[%d][%d] = ", i, j);
+           printf ("\n Elemento [%d][%d] = ", i, j);
            scanf ("%d", &matriz[ i ][ j ]);
         }
     }
@@ -20,7 +20,7 @@ int main (void ) {
 
     for (int k = 0; k < totalElementos; k++ ) {
         for (int l = 0; l < totalElementos; l++ ) {
-            printf ("\nElemento[%d][%d] = %d\n", k, l, matriz[ k ][ l ]);
+            printf ("\n Elemento [%d][%d] = %d\n", k, l, matriz[ k ][ l ]);
         }
     }
 
