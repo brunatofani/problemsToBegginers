@@ -5,22 +5,22 @@
 int main (void ) {
 
     int totalElementos = 3;
-    int matriz[totalElementos][totalElementos],i, j;
+    int matriz[totalElementos][totalElementos];
 
-    printf ("\nDigite valor para os elementos da matriz\n\n");
+    printf ("\n Digite valor para os elementos da matriz \n\n");
 
-    for ( i=0; i<totalElementos; i++ )
-        for ( j=0; j<totalElementos; j++ ) {
+    for (int i = 0; i < totalElementos; i++ )
+        for (int j = 0; j < totalElementos; j++ ) {
            printf ("\nElemento[%d][%d] = ", i, j);
            scanf ("%d", &matriz[ i ][ j ]);
         }
     }
 
-    printf("\n\n******************* Saida de Dados ********************* \n\n");
+    printf("\n\n ----------- Matriz ----------------- \n\n");
 
-    for ( i=0; i<totalElementos; i++ ) {
-        for ( j=0; j<totalElementos; j++ ) {
-            printf ("\nElemento[%d][%d] = %d\n", i, j,matriz[ i ][ j ]);
+    for (int k = 0; k < totalElementos; k++ ) {
+        for (int l = 0; l < totalElementos; l++ ) {
+            printf ("\nElemento[%d][%d] = %d\n", k, l, matriz[ k ][ l ]);
         }
     }
 
@@ -52,6 +52,7 @@ float media_matriz(int n, float mat[3][3]) {
 
 float maior_matriz(int totalElementos, float x[3][3]) {
    maior = x[0][0];
+   int i, j;
 
    for(i=0; i <= totalElementos; i++) {
 
